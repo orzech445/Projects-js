@@ -1,3 +1,5 @@
-Hi there 👋
+8. Quiz App
 
-I'm Janek and I'm a student at <a href="https://www.pja.edu.pl/en/">PJATK</a>. I start my work with many other tools like html, css, js, git. Now I want to still growing up...
+- Design: https://www.uidesigndaily.com/posts/sketch-questionnaire-choice-submit-day-924
+- select answer
+- at he end show score

@@ -1,0 +1,3 @@
+Hi there 👋
+
+I'm Janek and I'm a student at <a href="https://www.pja.edu.pl/en/">PJATK</a>. I start my work with many other tools like html, css, js, git. Now I want to still growing up...

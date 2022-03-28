@@ -56,6 +56,8 @@ function addMealLS(mealId) {
     const mealIds = getMealsLS();
 
     localStorage.setItem("mealIds", JSON.stringify([...mealIds, mealId]));
+
+    const
 }
 
 function removeMealLS(mealId) {

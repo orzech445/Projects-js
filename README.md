@@ -7,7 +7,7 @@
 2. Recipe App
 - Design: https://www.uidesigndaily.com/posts/sketch-recipe-app-food-mobile-day-615
 - recipe info on click
-- fav recipe (w/ localStorage)
+- localStorage
 
 3. Notes App
 - Design: https://uidesigndaily.com/posts/photoshop-notes-widget-day-65

@@ -4,13 +4,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>Note App</title>
     <link rel="stylesheet" href="style.css" />
 	<script src="script.js" defer></script>
 </head>
 <body>
-    <h1>
-        Hello
-    </h1>
+    <div class="container">
+        <div class="left">
+            <h1>Skontaktuj<span>Się Z Nami</span></h1>
+            <ul>
+                <li><a href="#"><img src="Icons/facebook.png" /></a></li>
+                <li><a href="#"><img src="Icons/facebook.png" /></a></li>
+                <li><a href="#"><img src="Icons/facebook.png" /></a></li>
+            </ul>
+        </div>
+
+        <form class="right">
+            <input type="text" id="fname" name="firstName" placeholder="Imię" />
+            <input type="text" id="lname" name="lastName" placeholder="Nazwisko" />
+            <textarea placeholder="Twoja wiadomość" cols="30" rows="10"></textarea>
+            <button>Wyślij</button>
+        </form>
+    </div>
 </body>
 </html>

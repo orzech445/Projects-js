@@ -14,3 +14,8 @@
 - localStorage
 - markdown library
 - CRUD note
+
+4. ToDo App
+- Design: http://todomvc.com/examples/react/#/
+- localStorage
+- CRUD todos

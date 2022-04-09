@@ -9,22 +9,14 @@
 	<script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="left">
-            <h1>Skontaktuj<span>Się Z Nami</span></h1>
-            <ul>
-                <li><a href="#"><img src="Icons/facebook.png" /></a></li>
-                <li><a href="#"><img src="Icons/facebook.png" /></a></li>
-                <li><a href="#"><img src="Icons/facebook.png" /></a></li>
-            </ul>
-        </div>
-
-        <form class="right">
-            <input type="text" id="fname" name="firstName" placeholder="Imię" />
-            <input type="text" id="lname" name="lastName" placeholder="Nazwisko" />
-            <textarea placeholder="Twoja wiadomość" cols="30" rows="10"></textarea>
-            <button>Wyślij</button>
-        </form>
-    </div>
+    <h1>todos</h1>
+    <form class="form">
+        <input type="text" id="input" placeholder="Enter your todo" autocomplete="off">
+        <ul class="todos">
+        </ul>
+    </form>
+    <small>
+        Left click to complete the task<br />Right click to delete the task
+    </small>
 </body>
 </html>

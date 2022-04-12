@@ -19,3 +19,8 @@
 - Design: http://todomvc.com/examples/react/#/
 - localStorage
 - CRUD todos
+
+5. Movie App
+- Design: https://uidesigndaily.com/posts/photoshop-movie-app-mobile-day-193
+- list of movies
+- movie info

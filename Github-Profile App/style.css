@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #012d56;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.search {
+    background-color: #023b70;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 1.4rem;
+    outline: none;
+    border: 2px solid #012d56;
+    border-radius: 20px;
+    color: #eee;
+    margin-bottom: 2rem;
+    padding: 0.8rem 1rem;
+}
+
+.search::placeholder {
+    color: rgb(187, 187, 187);
+}
+
+.card {
+    background-color: #023b70;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: #eee;
+    border-radius: 20px;
+    display: flex;
+    width: 800px;
+    padding: 3rem;
+}
+
+.card img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 10px solid #012d56;
+}
+
+.profile-info {
+    margin-left: 2rem;
+}
+
+.profile-info ul {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.profile-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    background-color: #222272;
+    color: #eee;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}

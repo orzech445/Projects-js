@@ -24,3 +24,9 @@
 - Design: https://uidesigndaily.com/posts/photoshop-movie-app-mobile-day-193
 - list of movies
 - movie info
+
+6. Drawing App
+- canvas
+- size
+- color
+- clear

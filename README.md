@@ -30,3 +30,10 @@
 - size
 - color
 - clear
+
+7. Password Generator
+- Design: https://codepen.io/FlorinPop17/full/BaBePej
+- symbols
+- letters
+- numbers
+- copy to clipboard

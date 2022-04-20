@@ -37,3 +37,8 @@
 - letters
 - numbers
 - copy to clipboard
+
+8 Weather App
+- enter location
+- get weather
+- weather icon

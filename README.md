@@ -1,19 +1,20 @@
-1. Quiz App
-
-- Design: https://www.uidesigndaily.com/posts/sketch-questionnaire-choice-submit-day-924
-- select answer
-- at the end show score
+1. Password Generator
+- Design: https://codepen.io/FlorinPop17/full/BaBePej
+- symbols
+- letters
+- numbers
+- copy to clipboard
 
 2. Recipe App
 - Design: https://www.uidesigndaily.com/posts/sketch-recipe-app-food-mobile-day-615
 - recipe info on click
 - localStorage
+- font awesome library
 
-3. Notes App
-- Design: https://uidesigndaily.com/posts/photoshop-notes-widget-day-65
-- localStorage
-- markdown library
-- CRUD note
+3. Weather App
+- enter location
+- get weather
+- weather icon
 
 4. ToDo App
 - Design: http://todomvc.com/examples/react/#/
@@ -31,14 +32,17 @@
 - color
 - clear
 
-7. Password Generator
-- Design: https://codepen.io/FlorinPop17/full/BaBePej
-- symbols
-- letters
-- numbers
-- copy to clipboard
+7. Quiz App
+- Design: https://www.uidesigndaily.com/posts/sketch-questionnaire-choice-submit-day-924
+- select answer
+- at the end show score
 
-8 Weather App
-- enter location
-- get weather
-- weather icon
+8. Note App
+- Design: https://uidesigndaily.com/posts/photoshop-notes-widget-day-65
+- localStorage
+- markdown library
+- CRUD note
+
+9. Modal window
+- accept, cancel buttons
+- feather icons library 

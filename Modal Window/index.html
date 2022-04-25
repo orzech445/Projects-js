@@ -4,13 +4,27 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>title</title>
+    <title>Modal Window</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	<script src="script.js" defer></script>
 </head>
 <body>
-    <h1>
-        Hello
-    </h1>
+    <div class="add-buttons">
+        <button class="info">Add Info Button</button>
+        <button class="warning">Add Warning Button</button>
+        <button class="danger">Add Danger Button</button>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <h2>Title</h2>
+            <p>Description</p>
+            <div class="modal-buttons">
+                <button class="accept">Accept</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

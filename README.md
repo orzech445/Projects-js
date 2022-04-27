@@ -46,3 +46,6 @@
 9. Modal window
 - accept, cancel buttons
 - feather icons library 
+
+10. Tooltip
+- show tooltip on mauseover

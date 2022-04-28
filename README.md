@@ -48,4 +48,5 @@
 - feather icons library 
 
 10. Tooltip
-- show tooltip on mauseover
+- show tooltip on mauseover and click
+- close tooltip on click

@@ -13,18 +13,21 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .boxes {
     display: flex;
 }
 
-.boxes div {
+.boxes div,
+.bottom-box .orange  {
     position: relative;
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    margin: 2rem;
+    text-align: center;
+    margin: 3rem 2rem;
 }
 
 .boxes div:nth-child(1) {
@@ -39,8 +42,17 @@ body {
     background-color: rgb(67, 67, 218);
 }
 
+.orange {
+    background-color: rgb(186, 142, 60);
+}
+
 .boxes div:hover {
     transform: scale(104%);
+}
+
+.orange:hover {
+    cursor: pointer;
+    opacity: .8;
 }
 
 .tooltip {
@@ -74,4 +86,40 @@ body {
     left: 10px;
 }
 
+
+.bottom-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.tooltip-bottom {
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    display: flex;
+    padding: 0.5rem;
+}
+
+.tooltip-bottom::after {
+    background-color: inherit;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 8px;
+    top: 25px;
+    left: -7px;
+    border-radius: 50px;
+}
+
+.close-icon {
+    cursor: pointer;
+    margin: 0 0 0 1rem;
+}
+
+.close-icon:hover {
+    font-weight: bold;
+}
 

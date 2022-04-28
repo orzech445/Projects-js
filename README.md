@@ -49,4 +49,4 @@
 
 10. Tooltip
 - show tooltip on mauseover and click
-- close tooltip on click
+- close tooltip on mauseleave and click

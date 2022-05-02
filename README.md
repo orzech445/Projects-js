@@ -50,3 +50,7 @@
 10. Tooltip
 - show tooltip on mauseover and click
 - close tooltip on mauseleave and click
+
+11. Store Page
+- add product to basket
+-

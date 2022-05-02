@@ -4,11 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Store Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <title>Store Page</title>
 </head>
 <body>
-    
+    <header>
+        <div class="title">
+            <span>media</span>
+            <span>creator</span>
+            <i class="fa fa-play"></i> 
+        </div>
+        <div class="search-bar">
+            <input type="text" class="input" placeholder="Wyszukaj w sklepie..." autocomplete="off" />
+            <i class="fa fa-search"></i>
+        </div>
+        <div class="basket">
+            <i class="fa fa-shopping-cart"></i>
+            <p>Koszyk</p>
+        </div>
+    </header>
+    <main>
+        <div class="categories-list">
+            <h1>Produkty</h1>
+            <div class="categories-item">
+                <p class="active" >wszystkie</p>
+                <button>iphone</button>
+                <button>huawei</button>
+                <button>nokia</button>
+                <button>samsung</button>
+            </div>
+        </div>
+        <section class="products-list">
+            <div class="product">
+                <img src="./images/huawei-1.jpg" alt="phone-img" />
+                <h2 class="product-title">Iphone 11</h2>
+                <p class="product-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Dicta, iusto. Impedit ducimus aliquam incidunt veritatis.</p>
+                <div class="price">
+                    <p class="normal-price">3000.99 zł</p>
+                    <p class="sale-price">2799.99 zł</p>
+                </div>
+                <button class="add-to-basket-btn">Dodaj do koszyka</button>
+                <span class="special-offer">Promocja</span>
+            </div>
+            <div class="product">
+                <img src="./images/huawei-1.jpg" alt="phone-img" />
+                <h2 class="product-title">Iphone 11</h2>
+                <p class="product-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Dicta, iusto. Impedit ducimus aliquam incidunt veritatis.</p>
+                <div class="price">
+                    <p class="normal-price">3000.99 zł</p>
+                    <p class="sale-price">2799.99 zł</p>
+                </div>
+                <button class="add-to-basket-btn">Dodaj do koszyka</button>
+                <span class="special-offer">Promocja</span>
+            </div>
+        </section>
+        <script src="products.js"></script>
+        <script src="script.js"></script>
+    </main>
 </body>
 </html>

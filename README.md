@@ -53,4 +53,4 @@
 
 11. Store Page
 - add product to basket
--
+- filter by categories

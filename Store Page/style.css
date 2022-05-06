@@ -106,6 +106,7 @@ main {
     flex-wrap: wrap;
     gap: 5rem;
     padding: 1rem;
+    margin-top: 2rem;
 }
 
 .product {
@@ -135,14 +136,19 @@ main {
     align-items: center;
     justify-content: center;
     gap: .8rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: green;
     margin-bottom: .5rem;
 }
 
-.normal-price {
+.on-sale .normal-price {
     position: relative;
+    color: #111;
+    font-size: 1rem;
 }
 
-.normal-price::before {
+.on-sale .normal-price::before {
     position: absolute;
     content: "";
     bottom: 12px;
@@ -154,9 +160,11 @@ main {
 }
 
 .sale-price {
-    font-size: 1.7rem;
-    font-weight: bold;
-    color: green;
+    display: none;
+}
+
+.on-sale .sale-price {
+    display: block;
 }
 
 .add-to-basket-btn {
@@ -169,6 +177,7 @@ main {
     cursor: pointer;
     border-radius: 20px;
     padding: .5rem .8rem;
+    margin-bottom: .5rem;
     transition: all .3s ease-in-out;
 }
 
@@ -177,6 +186,7 @@ main {
 }
 
 .special-offer {
+    display: none;
     background-color: #111;
     position: absolute;
     color: yellow;
@@ -185,4 +195,46 @@ main {
     opacity: .8;
     border-radius: 10px;
     padding: .5rem .8rem;
+}
+
+.on-sale .special-offer {
+    display: block;
+}
+
+.empty-state {
+    display: none;
+}
+
+.empty-state.active {
+    display: block;
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1300px) {
+    main {
+        flex-direction: row;
+    }
+
+    .categories-list {
+        flex-direction: column;
+        align-items: center;
+        min-width: 350px;
+        border-right: 1px solid black;
+    }
+
+    .categories-list h1 {
+        background-color: rgb(220, 220, 83);
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-bottom: .5rem;
+    }
+
+    .categories-item {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+    }
 }

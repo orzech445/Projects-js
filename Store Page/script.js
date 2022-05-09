@@ -2,6 +2,12 @@ let currentProducts = products;
 const productsList = document.querySelector(".products-list");
 let categories = new Set();
 const categoriesItem = document.querySelector(".categories-item");
+
+const emptyState = document.querySelector(".empty-state");
+
+const addToBasket = (e) => {
+    console.log(e.target.dataset.id);
+};
 const emptyState = document.querySelector(".empty-state");
 
 const addToBasket = (e) => {

@@ -2,16 +2,30 @@ let currentProducts = products;
 const productsList = document.querySelector(".products-list");
 let categories = new Set();
 const categoriesItem = document.querySelector(".categories-item");
-
 const emptyState = document.querySelector(".empty-state");
+let basket = [];
+const basketP = document.querySelector(".basket p");
+const closeIcon = document.querySelector(".fa-close");
 
 const addToBasket = (e) => {
-    console.log(e.target.dataset.id);
-};
-const emptyState = document.querySelector(".empty-state");
+    const selectedId = parseInt(e.target.dataset.id);
 
-const addToBasket = (e) => {
-    console.log(e.target.dataset.id);
+    const key = currentProducts.findIndex((item) => item.id === selectedId);
+
+    basket.push(currentProducts.at(key));
+
+    const basketTotal = basket.reduce((sum, item) => {
+        if (item.saleAmount) {
+            return (sum += item.price - item.saleAmount);
+        } else {
+            return (sum += item.price);
+        }
+    }, 0);
+
+    closeIcon.classList.add("active");
+
+    basketP.innerHTML = `${basketTotal} zł`;
+
 };
 
 const renderProducts = (items) => {
@@ -63,6 +77,14 @@ document.onload = renderCategories(currentProducts);
 const categoriesBtns = document.querySelectorAll(".categories-item button");
 
 categoriesBtns.forEach((btn) => btn.addEventListener("click", (e) => {
+    input.value = "";
+
+    const foundProducts = currentProducts.filter(
+        (item) => item.name.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+
+    foundProducts.length === 0 ? emptyState.classList.add("active") : emptyState.classList.remove("active");
+
     currentProducts = products;
 
     categoriesBtns.forEach((btn2) => btn2.classList.remove("active"));
@@ -83,7 +105,6 @@ categoriesBtns.forEach((btn) => btn.addEventListener("click", (e) => {
 const input = document.querySelector(".input");
 
 input.addEventListener("input", (e) => {
-
     const foundProducts = currentProducts.filter(
         (item) => item.name.toLowerCase().includes(e.target.value.toLowerCase())
     );
@@ -93,3 +114,9 @@ input.addEventListener("input", (e) => {
     renderProducts(foundProducts);
 })
 
+closeIcon.addEventListener("click", () => {
+    basketP.innerHTML = "Koszyk";
+    basket = [];
+
+    closeIcon.classList.remove("active");
+});

@@ -16,6 +16,9 @@ header {
     color: #fff;
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     padding: 2.4rem;
 }
 
@@ -58,6 +61,18 @@ header {
     align-items: center;
     gap: 1rem;
 }
+
+.fa-close {
+    display: none;
+    color: yellow;
+    font-size: .9rem;
+    align-self: start;
+    cursor: pointer;
+}
+
+.fa-close.active {
+    display: block;
+} 
 
 main {
     display: flex;

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.phone-container {
+    height: 400px;
+}
+
+.header {
+    background-color: #9fa4c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+    padding: 2rem 4rem;
+}
+
+.name,
+.number,
+.edit-name,
+.edit-number {
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: .1rem .5rem;
+}
+
+.addBtn {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    width: 25px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.addBtn:hover {
+    opacity: 70%;
+}
+
+.contacts-list {
+    background-color: #111;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    background-color: rgb(38, 44, 47);
+    position: relative;
+    border-bottom: 1px solid #fff;
+    padding: .6rem;
+}
+
+.icons {
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: .5rem;
+    align-items: center;
+}
+
+.fa.fa-trash-o,
+.fa.fa-edit {
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.fa.fa-trash-o:hover,
+.fa.fa-edit:hover {
+    opacity: 70%;
+}
+
+.modal {
+    background-color: #8a8fb2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+}
+
+.modal h2 {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ok,
+.cancel {
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .1rem .2rem;
+}
+
+.ok {
+    background-color: rgb(90, 194, 90);
+}
+
+.cancel {
+    background-color: rgb(201, 27, 27);
+}

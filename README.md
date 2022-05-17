@@ -54,3 +54,7 @@
 11. Store Page
 - add product to basket
 - filter by categories
+
+12. Contact List
+- CRUD contact
+- Event Delegation

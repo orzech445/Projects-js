@@ -98,3 +98,29 @@ copyEl.addEventListener("click", () => {
     textarea.remove();
     alert("Password copied to clipboard");
 });
+
+/* DARK MODE */
+
+let theme = localStorage.getItem("theme");
+
+document.querySelector(".dark-mode").addEventListener("click", () => {
+    if (theme === "dark") {
+        document.body.classList.remove("dark");
+        document.body.classList.add("light");
+        theme = "light"
+    } else {
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+        theme = "dark";
+    }
+
+    localStorage.setItem("theme", theme);
+});
+
+if (theme === "dark") {
+    document.body.classList.add("dark");
+}
+
+if (theme === "light") {
+    document.body.classList.add("light");
+}

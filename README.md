@@ -4,6 +4,7 @@
 - letters
 - numbers
 - copy to clipboard
+- Dark Mode
 
 2. Recipe App
 - Design: https://www.uidesigndaily.com/posts/sketch-recipe-app-food-mobile-day-615
